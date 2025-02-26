@@ -2,16 +2,18 @@
 #include <iostream>
 #include <string>
 #include <map>
+#include <vector>
 using namespace std;
 
 
 class User{
 
 public:
-	User(string login, string pass, string firstName, string lastName, string patronymic, string adress, string phone);
+	User(map<string, string> data);
 	void showData();
 	int getId();
 	bool getIsAdmin();
+	void changeData(map<string, string> data);
 	~User();
 
 private:
