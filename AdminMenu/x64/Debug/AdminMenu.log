@@ -1,0 +1,57 @@
+﻿  AdminMenu.cpp
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(21,20): error C2664: "HANDLE FindFirstFileW(LPCWSTR,LPWIN32_FIND_DATAW)": невозможно преобразовать аргумент 1 из "const _Elem *" в "LPCWSTR"
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(21,63): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\fileapi.h(248,1): message : см. объявление "FindFirstFileW"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(21,20): message : при попытке сопоставить список аргументов "(const _Elem *, WIN32_FIND_DATA *)"
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,48): error C2676: бинарный "+": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" не определяет этот оператор или преобразование к типу приемлемо к встроенному оператору
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5183,62): message : может быть "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(std::basic_string<_Elem,_Traits,_Alloc> &&,const _Elem)"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(std::basic_string<_Elem,_Traits,_Alloc> &&,const _Elem)": в шаблон параметр "_Elem" неоднозначен
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : может быть "WCHAR *"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : или       "char"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : 'std::basic_string<_Elem,_Traits,_Alloc> std::operator +(std::basic_string<_Elem,_Traits,_Alloc> &&,const _Elem)': не удалось вывести аргумент шаблон для 'const _Elem' из 'WCHAR [260]'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5177,62): message : или       "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(std::basic_string<_Elem,_Traits,_Alloc> &&,const _Elem *const )"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(std::basic_string<_Elem,_Traits,_Alloc> &&,const _Elem *const )": в шаблон параметр "_Elem" неоднозначен
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : может быть "WCHAR"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : или       "char"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : 'std::basic_string<_Elem,_Traits,_Alloc> std::operator +(std::basic_string<_Elem,_Traits,_Alloc> &&,const _Elem *const )': не удалось вывести аргумент шаблон для 'const _Elem *const ' из 'WCHAR [260]'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5171,62): message : или       "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const _Elem,std::basic_string<_Elem,_Traits,_Alloc> &&)"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : 'std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const _Elem,std::basic_string<_Elem,_Traits,_Alloc> &&)': не удалось вывести аргумент шаблон для 'std::basic_string<_Elem,_Traits,_Alloc> &&' из 'WCHAR [260]'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5165,62): message : или       "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const _Elem *const ,std::basic_string<_Elem,_Traits,_Alloc> &&)"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : 'std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const _Elem *const ,std::basic_string<_Elem,_Traits,_Alloc> &&)': не удалось вывести аргумент шаблон для 'const _Elem *const ' из 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5152,62): message : или       "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(std::basic_string<_Elem,_Traits,_Alloc> &&,std::basic_string<_Elem,_Traits,_Alloc> &&)"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : 'std::basic_string<_Elem,_Traits,_Alloc> std::operator +(std::basic_string<_Elem,_Traits,_Alloc> &&,std::basic_string<_Elem,_Traits,_Alloc> &&)': не удалось вывести аргумент шаблон для 'std::basic_string<_Elem,_Traits,_Alloc> &&' из 'WCHAR [260]'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5146,62): message : или       "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(std::basic_string<_Elem,_Traits,_Alloc> &&,const std::basic_string<_Elem,_Traits,_Alloc> &)"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : 'std::basic_string<_Elem,_Traits,_Alloc> std::operator +(std::basic_string<_Elem,_Traits,_Alloc> &&,const std::basic_string<_Elem,_Traits,_Alloc> &)': не удалось вывести аргумент шаблон для 'const std::basic_string<_Elem,_Traits,_Alloc> &' из 'WCHAR [260]'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5140,62): message : или       "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const std::basic_string<_Elem,_Traits,_Alloc> &,std::basic_string<_Elem,_Traits,_Alloc> &&)"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : 'std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const std::basic_string<_Elem,_Traits,_Alloc> &,std::basic_string<_Elem,_Traits,_Alloc> &&)': не удалось вывести аргумент шаблон для 'std::basic_string<_Elem,_Traits,_Alloc> &&' из 'WCHAR [260]'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5129,62): message : или       "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)": в шаблон параметр "_Elem" неоднозначен
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : может быть "WCHAR *"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : или       "char"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : 'std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)': не удалось вывести аргумент шаблон для 'const _Elem' из 'WCHAR [260]'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5116,62): message : или       "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )": в шаблон параметр "_Elem" неоднозначен
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : может быть "WCHAR"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : или       "char"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : 'std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )': не удалось вывести аргумент шаблон для 'const _Elem *const ' из 'WCHAR [260]'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5105,62): message : или       "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const _Elem,const std::basic_string<_Elem,_Traits,_Alloc> &)"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : 'std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const _Elem,const std::basic_string<_Elem,_Traits,_Alloc> &)': не удалось вывести аргумент шаблон для 'const std::basic_string<_Elem,_Traits,_Alloc> &' из 'WCHAR [260]'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5092,62): message : или       "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : 'std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)': не удалось вывести аргумент шаблон для 'const _Elem *const ' из 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5080,62): message : или       "std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &)"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : 'std::basic_string<_Elem,_Traits,_Alloc> std::operator +(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &)': не удалось вывести аргумент шаблон для 'const std::basic_string<_Elem,_Traits,_Alloc> &' из 'WCHAR [260]'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xutility(4052,5): message : или       "std::move_iterator<_Iter> std::operator +(move_iterator<_Iter>::difference_type,const std::move_iterator<_Iter> &) noexcept(<expr>)"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : 'std::move_iterator<_Iter> std::operator +(move_iterator<_Iter>::difference_type,const std::move_iterator<_Iter> &) noexcept(<expr>)': не удалось вывести аргумент шаблон для 'const std::move_iterator<_Iter> &' из 'WCHAR [260]'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xutility(1547,50): message : или       "std::reverse_iterator<_BidIt> std::operator +(reverse_iterator<_BidIt>::difference_type,const std::reverse_iterator<_BidIt> &) noexcept(<expr>)"
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(31,41): message : 'std::reverse_iterator<_BidIt> std::operator +(reverse_iterator<_BidIt>::difference_type,const std::reverse_iterator<_BidIt> &) noexcept(<expr>)': не удалось вывести аргумент шаблон для 'const std::reverse_iterator<_BidIt> &' из 'WCHAR [260]'
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(271,21): error C2065: users: необъявленный идентификатор
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(274,24): error C2065: users: необъявленный идентификатор
+C:\Users\user\Documents\C++ projects\AdminMenu\AdminMenu.cpp(277,24): error C2065: users: необъявленный идентификатор
